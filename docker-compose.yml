@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   db:
-    container_name: anki-database
+    container_name: trpgManager-database
     build:
       dockerfile: Database/Dockerfile
       context: .
