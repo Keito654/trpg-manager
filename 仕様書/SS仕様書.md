@@ -31,8 +31,6 @@ erDiagram
       string group_name
       string group_description
       string group_key
-      string created_by
-      string updated_by
       timestamp created_at
       timestamp updated_at
     }
