@@ -3,14 +3,9 @@ import Grid from "@mui/material/Unstable_Grid2";
 import AddIcon from "@mui/icons-material/Add";
 import React, { FC } from "react";
 import { GroupCardContainer } from "Container/atoms/groupCard";
+import Link from "next/link";
 
-type Props = {
-  handleCardAddButtonClick: (
-    event: React.MouseEvent<HTMLButtonElement>
-  ) => void;
-};
-
-export const GroupList: FC<Props> = ({ handleCardAddButtonClick }) => {
+export const GroupList: FC = () => {
   return (
     <Grid container rowSpacing={5} columnSpacing={3}>
       {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((x) => (
@@ -27,7 +22,8 @@ export const GroupList: FC<Props> = ({ handleCardAddButtonClick }) => {
         >
           <CardActionArea
             sx={{ height: "100%" }}
-            onClick={handleCardAddButtonClick}
+            LinkComponent={Link}
+            href="/group/add"
           >
             <CardContent
               sx={{ height: "100%", display: "flex", flexDirection: "column" }}
