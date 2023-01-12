@@ -1,5 +1,5 @@
-import { GroupList } from "components/organisms/groupList";
+import { GroupListContainer } from "Container/organisms/groupList";
 
 export default function Home() {
-  return <GroupList />;
+  return <GroupListContainer />;
 }
