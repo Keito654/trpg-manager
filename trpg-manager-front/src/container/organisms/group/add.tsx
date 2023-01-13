@@ -1,4 +1,4 @@
-import { GroupAdd } from "components/organisms/groupAdd";
+import { GroupAdd } from "components/organisms/group/add";
 import { FC } from "react";
 
 export const GroupAddContainer: FC = () => {

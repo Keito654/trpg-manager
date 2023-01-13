@@ -2,7 +2,7 @@ import { Card, CardActionArea, CardContent } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 import AddIcon from "@mui/icons-material/Add";
 import React, { FC } from "react";
-import { GroupCardContainer } from "Container/atoms/groupCard";
+import { GroupCardContainer } from "container/atoms/groupCard";
 import Link from "next/link";
 
 export const GroupList: FC = () => {
