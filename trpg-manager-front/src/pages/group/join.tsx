@@ -1,3 +1,5 @@
-export default function GroupJoin() {
-  return <p>group join</p>;
+import { GroupJoinContainer } from "lib/container/organisms/group/join";
+
+export default function GroupJoinPage() {
+  return <GroupJoinContainer />;
 }

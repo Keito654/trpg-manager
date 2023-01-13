@@ -1,3 +1,5 @@
+import { GroupUpdateContainer } from "container/organisms/group/update";
+
 export default function GroupUpdate() {
-  return <p>group update</p>;
+  return <GroupUpdateContainer />;
 }
