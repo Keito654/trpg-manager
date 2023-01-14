@@ -1,3 +1,5 @@
-export default function Scenario() {
-  return <p>group scenario</p>;
+import { ScenarioContainer } from "container/organisms/group/scenario";
+
+export default function ScenarioPage() {
+  return <ScenarioContainer />;
 }

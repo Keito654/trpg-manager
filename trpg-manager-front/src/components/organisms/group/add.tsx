@@ -25,9 +25,9 @@ export const GroupAdd: FC = () => {
         <Box>
           <LabelText>共有URL</LabelText>
           <TextField
-            value={"aaaaaaaaaaa"}
+            defaultValue={"aaaaaaaaaaa"}
             fullWidth
-            InputProps={{ endAdornment: <CopyButton /> }}
+            InputProps={{ readOnly: true, endAdornment: <CopyButton /> }}
           />
         </Box>
       </Box>

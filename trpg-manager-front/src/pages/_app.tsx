@@ -7,10 +7,6 @@ import theme from "styles/theme";
 import createEmotionCache from "styles/createEmotionCache";
 import { Layout } from "components/layout/layout";
 import { useRouter } from "next/router";
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
