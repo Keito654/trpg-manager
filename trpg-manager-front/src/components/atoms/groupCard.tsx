@@ -38,21 +38,16 @@ export const GroupCard: FC<Props> = ({
           <CardContent
             sx={{ height: "100%", display: "flex", flexDirection: "column" }}
           >
-            <Typography
-              variant="h5"
-              component="div"
-              sx={{
-                overflow: "hidden",
-                textOverflow: "ellipsis",
-                whiteSpace: "nowrap",
-              }}
-            >
+            <Typography variant="h5" component="div" noWrap={true}>
               {title}
             </Typography>
             <Typography
               variant="body2"
               sx={{
                 mt: 1.5,
+                WebkitLineClamp: 6,
+                display: "-webkit-box",
+                WebkitBoxOrient: "vertical",
                 overflow: "hidden",
               }}
             >

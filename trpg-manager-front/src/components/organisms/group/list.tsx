@@ -10,7 +10,7 @@ export const GroupList: FC = () => {
     <Grid container rowSpacing={5} columnSpacing={3}>
       {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((x) => (
         <Grid key={x}>
-          <GroupCardContainer title={"テスト" + x} description={"aaaaa"} />
+          <GroupCardContainer title={"テスト" + x} description={"あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ"} />
         </Grid>
       ))}
 
