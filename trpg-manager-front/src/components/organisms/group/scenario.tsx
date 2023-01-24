@@ -1,8 +1,9 @@
-import { TextField } from "@mui/material";
+import { IconButton, TextField } from "@mui/material";
 import { ScenarioCard } from "components/atoms/scenarioCard";
 import { SearchButton } from "components/atoms/searchButton";
 import { FC } from "react";
 import Grid from "@mui/material/Unstable_Grid2";
+import AddIcon from "@mui/icons-material/Add";
 
 export const Scenario: FC = () => {
   return (
@@ -24,6 +25,20 @@ export const Scenario: FC = () => {
           </Grid>
         ))}
       </Grid>
+      <IconButton
+        sx={{
+          backgroundColor: "#2196f3",
+          color: "#FFFFFF",
+          "&:hover": { backgroundColor: "#4dabf5" },
+          width: "2.3em",
+          height: "2.3em",
+          position: "sticky",
+          bottom: "50px",
+          float: "right",
+        }}
+      >
+        <AddIcon fontSize="large" />
+      </IconButton>
     </>
   );
 };
