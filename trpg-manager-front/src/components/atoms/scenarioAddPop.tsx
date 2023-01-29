@@ -1,20 +1,15 @@
 import { Popover, Box, TextField } from "@mui/material";
-import { FC, useState } from "react";
+import { FC } from "react";
 import { LabelText } from "./labelText";
 import Image from "next/image";
-import iguanaImage from "../../../public/contemplative-reptile.jpg";
+// import iguanaImage from "/../../../public/contemplative-reptile.jpg";
 
-export const ScenarioAddPop: FC = () => {
-  const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
+type Props = {
+  anchorEl: HTMLButtonElement | null;
+  handleClose: () => void;
+};
 
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
+export const ScenarioAddPop: FC<Props> = ({ anchorEl, handleClose }) => {
   const open = Boolean(anchorEl);
 
   return (
@@ -59,7 +54,7 @@ export const ScenarioAddPop: FC = () => {
           }}
         >
           <Image
-            src={iguanaImage}
+            src="/contemplative-reptile.jpg"
             alt="aaa"
             fill
             style={{ objectFit: "contain" }}
