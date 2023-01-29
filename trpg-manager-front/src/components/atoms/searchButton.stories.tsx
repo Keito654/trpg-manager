@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { ScenarioAddPop as Pop } from "./scenarioAddPop";
+import { ScenarioCard as Pop } from "./scenarioCard";
 
 export default {
   title: "Card",
@@ -8,9 +8,8 @@ export default {
 
 const Template: ComponentStory<typeof Pop> = (args) => <Pop {...args} />;
 
-export const ScenarioAddPop = Template.bind({});
+export const ScenarioCard = Template.bind({});
 
-ScenarioAddPop.args = {
-  anchorEl: document.createElement("button"),
-  handleClose: () => {},
+ScenarioCard.args = {
+  title: "タイトル",
 };

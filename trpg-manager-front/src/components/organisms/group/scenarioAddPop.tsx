@@ -1,8 +1,8 @@
 import { Popover, Box, TextField } from "@mui/material";
 import { FC } from "react";
-import { LabelText } from "./labelText";
+import { LabelText } from "../../atoms/labelText";
 import Image from "next/image";
-// import iguanaImage from "/../../../public/contemplative-reptile.jpg";
+import iguanaImage from "../../../../public/contemplative-reptile.jpg";
 
 type Props = {
   anchorEl: HTMLButtonElement | null;
@@ -54,7 +54,7 @@ export const ScenarioAddPop: FC<Props> = ({ anchorEl, handleClose }) => {
           }}
         >
           <Image
-            src="/contemplative-reptile.jpg"
+            src={iguanaImage}
             alt="aaa"
             fill
             style={{ objectFit: "contain" }}

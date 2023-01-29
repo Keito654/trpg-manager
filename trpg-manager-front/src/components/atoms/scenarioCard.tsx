@@ -7,14 +7,13 @@ import {
 } from "@mui/material";
 import { FC } from "react";
 import Image from "next/image";
-import iguanaImage from "../../../public/contemplative-reptile.jpg";
+import iguana from "../../../public/contemplative-reptile.jpg";
 
 type Props = {
   title: string;
 };
 
 export const ScenarioCard: FC<Props> = ({ title }) => {
-
   return (
     <div>
       <Card
@@ -30,7 +29,7 @@ export const ScenarioCard: FC<Props> = ({ title }) => {
             title="green iguana"
           >
             <Image
-              src={iguanaImage}
+              src={iguana}
               alt="iguana"
               fill
               style={{ objectFit: "cover" }}
