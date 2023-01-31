@@ -1,6 +1,5 @@
-import { Popover, Box, TextField } from "@mui/material";
+import { Popover, Box, Typography, Link } from "@mui/material";
 import { FC } from "react";
-import { LabelText } from "../../atoms/labelText";
 import Image from "next/image";
 import iguanaImage from "../../../../public/contemplative-reptile.jpg";
 
@@ -37,14 +36,9 @@ export const ScenarioDetailPop: FC<Props> = ({ anchorEl, handleClose }) => {
           width: "500px",
         }}
       >
-        <LabelText>シナリオ</LabelText>
-        <TextField
-          variant="outlined"
-          placeholder="50文字まで"
-          fullWidth
-          sx={{ mb: 4 }}
-        />
-        <LabelText>画像</LabelText>
+        <Typography variant="h5" sx={{ marginBottom: 3 }}>
+          シナリオタイトル
+        </Typography>
         <Box
           sx={{
             mb: 4,
@@ -60,27 +54,22 @@ export const ScenarioDetailPop: FC<Props> = ({ anchorEl, handleClose }) => {
             style={{ objectFit: "contain" }}
           />
         </Box>
-        <LabelText>URL</LabelText>
-        <TextField
-          variant="outlined"
-          placeholder="50文字まで"
-          fullWidth
-          sx={{ mb: 4 }}
-        />
-        <LabelText>説明</LabelText>
-        <TextField
-          variant="outlined"
-          placeholder="50文字まで"
-          fullWidth
-          sx={{ mb: 4 }}
-        />
-        <LabelText>読んだ人</LabelText>
-        <TextField
-          variant="outlined"
-          placeholder="50文字まで"
-          fullWidth
-          sx={{ mb: 4 }}
-        />
+        <Typography variant="h6" sx={{ marginBottom: 1 }}>
+          説明
+        </Typography>
+        <Typography sx={{ marginBottom: 3 }}>
+          説明説明説明ああああああああああああああああああああ
+        </Typography>
+        <Typography variant="h6" sx={{ marginBottom: 1 }}>
+          リンク
+        </Typography>
+        <Link href="http://example.com" target="_blank">
+          http://example.com
+        </Link>
+        <Typography variant="h6" sx={{ marginTop: 3, marginBottom: 1 }}>
+          読んだ人
+        </Typography>
+        <Typography>山田、山田、山田</Typography>
       </Box>
     </Popover>
   );
